@@ -92,6 +92,6 @@ const server = http.createServer((req,res)=>{
     }
 });
 
-server.listen(port,hostname,()=>{
+server.listen(port,()=>{
     console.log(`server is working on http://${hostname}:${port}`);
 });
