@@ -70,7 +70,7 @@ console.log(os.userInfo()); /*{
     shell: '/bin/zsh'
   }*/
 const fs = require("fs");
-const port = 2000;
+const port = 2000 || process.env.port;
 const hostname = "localhost";
 const home = fs.readFileSync("./index.html","utf-8");
 const http = require("http");
